@@ -1,0 +1,8 @@
+
+pod "FMDB"
+
+pod "YYKit"
+
+pod "SDAutoLayout"
+
+pod "AFNetworking"

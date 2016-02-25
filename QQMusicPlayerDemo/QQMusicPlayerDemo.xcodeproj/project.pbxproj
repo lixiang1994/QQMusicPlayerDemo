@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DFD2D769E27A24A9810E1C5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8602B8275FC19ECC58079B22 /* libPods.a */; };
 		9B1698131C7ED52F00830F78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1698121C7ED52F00830F78 /* main.m */; };
 		9B1698161C7ED52F00830F78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1698151C7ED52F00830F78 /* AppDelegate.m */; };
 		9B1698191C7ED52F00830F78 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1698181C7ED52F00830F78 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F4C0F056817898F7D112E9F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8602B8275FC19ECC58079B22 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B16980E1C7ED52F00830F78 /* QQMusicPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQMusicPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B1698121C7ED52F00830F78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9B1698141C7ED52F00830F78 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		9B1698321C7ED52F00830F78 /* QQMusicPlayerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QQMusicPlayerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B1698361C7ED52F00830F78 /* QQMusicPlayerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQMusicPlayerDemoUITests.m; sourceTree = "<group>"; };
 		9B1698381C7ED52F00830F78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CABF7B3817AB7DB2E2D91F47 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DFD2D769E27A24A9810E1C5 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4CE62990D42FE497CF9F444C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F4C0F056817898F7D112E9F /* Pods.debug.xcconfig */,
+				CABF7B3817AB7DB2E2D91F47 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9041DEE942D1170FDAE6FFAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8602B8275FC19ECC58079B22 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9B1698051C7ED52F00830F78 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				9B16982A1C7ED52F00830F78 /* QQMusicPlayerDemoTests */,
 				9B1698351C7ED52F00830F78 /* QQMusicPlayerDemoUITests */,
 				9B16980F1C7ED52F00830F78 /* Products */,
+				4CE62990D42FE497CF9F444C /* Pods */,
+				9041DEE942D1170FDAE6FFAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B16983B1C7ED52F00830F78 /* Build configuration list for PBXNativeTarget "QQMusicPlayerDemo" */;
 			buildPhases = (
+				580C4B99C241572AB4E2CE90 /* Check Pods Manifest.lock */,
 				9B16980A1C7ED52F00830F78 /* Sources */,
 				9B16980B1C7ED52F00830F78 /* Frameworks */,
 				9B16980C1C7ED52F00830F78 /* Resources */,
+				E26F20ABDB8C0D44DADA5B32 /* Embed Pods Frameworks */,
+				D415D482D7BAE0537094A3B7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +234,7 @@
 				TargetAttributes = {
 					9B16980D1C7ED52F00830F78 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = FKL55V49K8;
 					};
 					9B1698261C7ED52F00830F78 = {
 						CreatedOnToolsVersion = 7.2;
@@ -264,6 +292,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		580C4B99C241572AB4E2CE90 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D415D482D7BAE0537094A3B7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E26F20ABDB8C0D44DADA5B32 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9B16980A1C7ED52F00830F78 /* Sources */ = {
@@ -409,9 +485,12 @@
 		};
 		9B16983C1C7ED52F00830F78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F4C0F056817898F7D112E9F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = QQMusicPlayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lee.QQMusicPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,9 +499,12 @@
 		};
 		9B16983D1C7ED52F00830F78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CABF7B3817AB7DB2E2D91F47 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = QQMusicPlayerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lee.QQMusicPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +578,7 @@
 				9B16983D1C7ED52F00830F78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B16983E1C7ED52F00830F78 /* Build configuration list for PBXNativeTarget "QQMusicPlayerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +587,7 @@
 				9B1698401C7ED52F00830F78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B1698411C7ED52F00830F78 /* Build configuration list for PBXNativeTarget "QQMusicPlayerDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +596,7 @@
 				9B1698431C7ED52F00830F78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
